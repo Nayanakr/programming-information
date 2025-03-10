@@ -15,3 +15,16 @@
             }
             return sum;
         }
+        function doIt() {
+            // Get values of a, b and l from the input fields
+            let a = parseInt(document.getElementById("a").value);
+            let b = parseInt(document.getElementById("b").value);
+            let l = document.getElementById("l").value.split(',').map(Number); // Convert input into an array of numbers
+
+            // Call f4 to get the sum of multiples
+            let result = f4(a, b, l);
+            
+            // Alert the user with the result
+            alert("The sum of multiples of " + a + " or " + b + " in the list is: " + result);
+        }
+    </script>
