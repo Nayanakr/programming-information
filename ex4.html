@@ -5,3 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>Multiples sum in Array</title>
     <script>
+         function f4(a, b, l) {
+            let sum = 0;
+            // Loop through the array l and sum numbers that are multiples of a or b
+            for (let i = 0; i < l.length; i++) {
+                if (l[i] % a === 0 || l[i] % b === 0) {
+                    sum += l[i];
+                }
+            }
+            return sum;
+        }
