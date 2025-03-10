@@ -10,3 +10,15 @@
             let a = parseInt(document.getElementById("a").value);
             let b = parseInt(document.getElementById("b").value);
             let n = parseInt(document.getElementById("n").value);
+            let sum = 0;
+            // Loop through numbers below n
+            for (let i = 1; i < n; i++) {
+                // If the number is divisible by a or b, add it to the sum
+                if (i % a === 0 || i % b === 0) {
+                    sum += i;
+                }
+            }
+            // Alert the user with the sum
+            alert("The sum of multiples of " + a + " or " + b + " below " + n + " is: " + sum);
+        }
+    </script>
